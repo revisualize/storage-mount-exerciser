@@ -10,7 +10,7 @@ This is a canary, not a benchmark. If you need controlled I/O characterization w
 
 ```sh
 # One time: bless the scratch area, deliberately, by hand.
-mount -t nfs storage01:/ifs/data/export /mnt/check
+mount -t nfs storage01:/export/data /mnt/check
 mkdir -p /mnt/check/monitoring/exerciser_scratch
 touch /mnt/check/monitoring/exerciser_scratch/.mount_exerciser_scratch_area
 umount /mnt/check
@@ -48,7 +48,7 @@ Failed runs are recorded too. A history that contains only successes cannot answ
 |----------|---------|
 | `EXERCISER_PROTOCOL` | `nfs` |
 | `EXERCISER_NFS_SERVER` | `storage01.example.net` |
-| `EXERCISER_NFS_EXPORT` | `/ifs/data/export` |
+| `EXERCISER_NFS_EXPORT` | `/export/data` |
 | `EXERCISER_SMB_SERVER` | `storage01.example.net` |
 | `EXERCISER_SMB_SHARE` | `data` |
 | `EXERCISER_SMB_CREDENTIALS` | `/etc/storage_mount_exerciser/smb_credentials` |

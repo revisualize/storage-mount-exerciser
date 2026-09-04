@@ -39,7 +39,7 @@
 # Environment (all optional; defaults shown):
 #   EXERCISER_PROTOCOL          nfs
 #   EXERCISER_NFS_SERVER        storage01.example.net
-#   EXERCISER_NFS_EXPORT        /ifs/data/export
+#   EXERCISER_NFS_EXPORT        /export/data
 #   EXERCISER_SMB_SERVER        storage01.example.net
 #   EXERCISER_SMB_SHARE         data
 #   EXERCISER_SMB_CREDENTIALS   /etc/storage_mount_exerciser/smb_credentials
@@ -60,7 +60,7 @@ set -u
 # ---------------------------------------------------------------------
 storage_protocol="${EXERCISER_PROTOCOL:-nfs}"
 nfs_server="${EXERCISER_NFS_SERVER:-storage01.example.net}"
-nfs_export_path="${EXERCISER_NFS_EXPORT:-/ifs/data/export}"
+nfs_export_path="${EXERCISER_NFS_EXPORT:-/export/data}"
 smb_server="${EXERCISER_SMB_SERVER:-storage01.example.net}"
 smb_share_name="${EXERCISER_SMB_SHARE:-data}"
 smb_credentials_file="${EXERCISER_SMB_CREDENTIALS:-/etc/storage_mount_exerciser/smb_credentials}"
