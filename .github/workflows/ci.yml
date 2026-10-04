@@ -1,7 +1,7 @@
 # Path:     .github/workflows/ci.yml
 # Project:  revisualized.com public repositories (github.com/revisualize)
-# Revision: 8
-# Updated:  2026-09-26
+# Revision: 9
+# Updated:  2026-09-29
 #
 # Purpose:  One workflow, byte-identical in every repository that carries it.
 #           It knows nothing about any single repository. Each repository
@@ -33,6 +33,9 @@
 #           adds a current release, and its unittest exits 5 when no test
 #           ran, which 3.9 does not.
 #
+# Revision 9 adds workflow_dispatch, so the workflow can be re-run from the
+# Actions tab without a new commit. Nothing else changed from Revision 8.
+#
 # Revision 8 replaces Revisions 4 through 7. Those revisions detected each
 # language and skipped cleanly when a suite was absent, so a repository with
 # no tests reported the same success as one with fifty, and the negative
@@ -43,6 +46,7 @@ name: ci
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
