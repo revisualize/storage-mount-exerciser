@@ -9,6 +9,8 @@
 [![content-policy](https://github.com/revisualize/storage-mount-exerciser/actions/workflows/content-policy.yml/badge.svg)](https://github.com/revisualize/storage-mount-exerciser/actions/workflows/content-policy.yml)
 [![license: all rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)](LICENSE)
 
+**Project page:** [revisualized.com/projects/storage-mount-exerciser](https://revisualized.com/projects/storage-mount-exerciser)
+
 A data-path canary for NFS exports and SMB shares. It mounts, writes, reads back, verifies byte for byte, deletes, and unmounts, timing every phase in milliseconds and appending the result to a CSV history, so "the share feels slow" becomes a question with a baseline instead of a vibe.
 
 This is a canary, not a benchmark. If you need controlled I/O characterization with queue depths and block size sweeps, that tool exists and it is called `fio`.
