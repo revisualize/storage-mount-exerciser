@@ -6,9 +6,9 @@
 # Project:      storage_mount_exerciser
 # Description:  Behavioural tests for the safety contract, the data-path
 #               phases, exit-code selection, and CSV history recording.
-# Status:       production
-# Revision:     1
-# Updated:      2026-08-05
+# Status:       tested
+# Revision:     3
+# Updated:      October 2026
 # Requires:     bats, bash 4.2 or newer
 # Included by:  .github/workflows/ci.yml
 # Provides:     test coverage for storage_mount_exerciser.sh

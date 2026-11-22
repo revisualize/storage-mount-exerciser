@@ -7,9 +7,9 @@
 # Description:  Data-path canary for NFS exports and SMB shares. Mounts,
 #               writes, reads back, verifies, deletes, and unmounts,
 #               timing every phase in milliseconds into a CSV history.
-# Status:       production
-# Revision:     2
-# Updated:      2026-08-05
+# Status:       tested
+# Revision:     4
+# Updated:      October 2026
 # Requires:     Bash 4.2 or newer, GNU coreutils, util-linux (flock,
 #               mountpoint, findmnt), mount.nfs or mount.cifs
 # Included by:  standalone command line tool; sourceable for testing
